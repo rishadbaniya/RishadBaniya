@@ -1,6 +1,6 @@
 ### Hey random developer!
 
-Its me Rishad Baniya, its not risad, rishad and not probably richard. JUST "RISHAD"!
+Its me Rishad Baniya, its not risad, risabh and not probably richard. JUST "RISHAD"!
 - #00 🔭 I'm currently working on => RUST
 - #01🌱 I’m currently learning => ACTIX-WEB
 - #02👯 I’m looking to collaborate on => REACT-JS
