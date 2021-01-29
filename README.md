@@ -6,6 +6,6 @@ Its me Rishad Baniya, its not risad, risabh and not probably richard. JUST "RISH
 - #02👯 I’m looking to collaborate on => **REACT-JS**
 - #03🤔 I’m looking for help with => **RUST**
 - #04💬 Ask me about => **REACT-JS**
-- #05📫 How to reach me => [Website](http://www.rishadbaniya.com)
+- #05📫 How to reach me => [rishadbaniya.com](http://www.rishadbaniya.com)
 - #06😄 Pronouns: => **Procrastinator**
-- #07⚡ Fun fact: => Trying to survive 😊
+- #07⚡ Fun fact: => **Trying to survive 😊**
