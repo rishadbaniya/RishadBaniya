@@ -1,16 +1,11 @@
-### Hi there 👋
+### Hey random developer!
 
-<!--
-**rishadbaniya/RishadBaniya** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Its me Rishad Baniya, its not risad, rishad and not probably richard. JUST "RISHAD"!
+- #00 🔭 I'm currently working on => RUST
+- #01🌱 I’m currently learning => ACTIX-WEB
+- #02👯 I’m looking to collaborate on => REACT-JS
+- #03🤔 I’m looking for help with => RUST
+- #04💬 Ask me about => REACT-JS
+- #05📫 How to reach me => rishadbaniya.com
+- #06😄 Pronouns: => Procrastinator
+- #07⚡ Fun fact: => IM NOT BEJOS😂😂
