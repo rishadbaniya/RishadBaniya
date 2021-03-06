@@ -1,0 +1,33 @@
+syntax on;
+set noerrorbells
+set nu
+set nowrap
+set smartcase
+set noswapfile
+set nobackup
+set undodir="~/.config/nvim/undodir"
+set undofile
+set incsearch
+
+
+call plug#begin('~/.config/nvim/plugged')
+Plug 'autozimu/LanguageClient-neovim',{'branch':'next','do':'bash install.sh'}
+Plug 'junegunn/fzf'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'morhetz/gruvbox'
+Plug 'mbbill/undotree'
+Plug 'jiangmiao/auto-pairs'
+call plug#end()
+set hidden
+let g:LanguageClient_serverCommands ={ 'rust': ['~/.cargo/bin/rustup','run','stable','rls'],}
+
+colorscheme gruvbox
+
+set background=dark
+
+let g:deoplete#enable_at_startup = 1
+nmap <F5> <Plug>(lcn-menu)
+autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)
+let g:rustfmt_autosave = 1
+
+set mouse=a
