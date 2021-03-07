@@ -1,0 +1,6 @@
+NOTE : This file should be in ~/.config/nvim/
+
+
+{                                                                                                                                      │
+"suggest.noselect": false                                                                                                              │
+} 
