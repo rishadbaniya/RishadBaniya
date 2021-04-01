@@ -1,3 +1,6 @@
+(NOTE: TMUX CONFIGURATION IS LOCATED IN AS : ~/.tmux.conf )
+
+----------------------------------------------------------------------
 # remap prefix from 'C-b' to '(alt)M-a'
 unbind C-b 
 set-option -g prefix M-a
@@ -9,3 +12,5 @@ bind -r h select-pane -L
 bind -r l select-pane -R
 
 #unbind keys unbind Up unbind Down unbind Left unbind Right
+
+----------------------------------------------------------------------
