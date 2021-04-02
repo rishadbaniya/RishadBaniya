@@ -1,4 +1,15 @@
 (NOTE: TMUX CONFIGURATION IS LOCATED IN AS : ~/.tmux.conf )
+First of all clone the Tmux Plugin Manager by
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+Then copy past the code below in 
+~/.tmux.conf
+
+Then after copy pasting
+RUN THE COMMAND WHEN TMUX IS ALREADY RUNNING TO REFRESH
+tmux source ~/.tmux.conf
+
+THEN
+Press prefix + I (capital i, as in Install) to fetch the plugin.
 
 ----------------------------------------------------------------------
 # remap prefix from 'C-b' to '(alt)M-a'
@@ -11,6 +22,14 @@ bind -r j select-pane -D
 bind -r h select-pane -L
 bind -r l select-pane -R
 
-#unbind keys unbind Up unbind Down unbind Left unbind Right
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+#Tmux Battery level showing plugin
+set -g @plugin 'tmux-plugins/tmux-battery'
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+
 
 ----------------------------------------------------------------------
