@@ -14,7 +14,7 @@ set background=dark
 set ruler "Where am i
 set showcmd "Show (partial) command in status line
 set nolist
-set nonumber
+set relativenumber
 set hidden
 
 call plug#begin('~/.config/nvim/plugged')
