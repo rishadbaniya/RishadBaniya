@@ -1,13 +1,9 @@
 syntax on;
-
 set noerrorbells
 set nu
+set nohlsearch
 set nowrap
 set smartcase
-set noswapfile
-set nobackup
-set undodir="~/.config/nvim/undodir"
-set undofile
 set incsearch
 set guioptions-=T "Removes Toolbar
 set background=dark
@@ -16,19 +12,33 @@ set showcmd "Show (partial) command in status line
 set nolist
 set relativenumber
 set hidden
+set mouse=a
+set noswapfile
+set nobackup
+filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set undodir="~/.config/nvim/undodir"
+set undofile
+set so=8
+set signcolumn=yes
+set cmdheight=2
+
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'autozimu/LanguageClient-neovim',{'branch':'next','do':'bash install.sh'}
 Plug 'junegunn/fzf'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
 Plug 'mbbill/undotree'
 Plug 'jiangmiao/auto-pairs'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 " VIM enhancements
 Plug 'ciaranm/securemodelines'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
+
 
 " GUI enhancements
 Plug 'itchyny/lightline.vim'
@@ -40,14 +50,21 @@ Plug 'cespare/vim-toml'
 Plug 'stephpy/vim-yaml'
 Plug 'rust-lang/rust.vim'
 Plug 'dag/vim-fish'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
+"File Navigaiton
+Plug 'preservim/nerdtree'
+
+
+Plug 'ryanoasis/vim-devicons'
+
 call plug#end()
 
 
-let g:LanguageClient_serverCommands ={ 'rust': ['~/.cargo/bin/rustup','run','stable','rls'],}
-
 colorscheme gruvbox
+let mapleader=" "
+let g:LanguageClient_serverCommands ={ 'rust': ['~/.cargo/bin/rustup','run','stable','rls'],}
 let g:deoplete#enable_at_startup = 1
 nmap <F5> <Plug>(lcn-menu)
 autocmd FileType rust nmap <silent> gr <Plug>(lcn-rename)
@@ -99,3 +116,14 @@ let g:rustfmt_autosave = 1
 let g:rustfmt_emit_files = 1
 let g:rustfmt_fail_silently = 0
 let g:rust_clip_command = 'xclip -selection clipboard'
+
+
+
+" Remap for NERDTree File Navigation
+
+nnoremap <M-1> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
