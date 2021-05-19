@@ -6,7 +6,6 @@ set nowrap
 set smartcase
 set incsearch
 set guioptions-=T "Removes Toolbar
-set background=dark
 set ruler "Where am i
 set showcmd "Show (partial) command in status line
 set nolist
@@ -24,7 +23,7 @@ set undofile
 set so=8
 set signcolumn=yes
 set cmdheight=2
-
+set background=dark
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/fzf'
@@ -33,12 +32,10 @@ Plug 'mbbill/undotree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-
 " VIM enhancements
 Plug 'ciaranm/securemodelines'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
-
 
 " GUI enhancements
 Plug 'itchyny/lightline.vim'
@@ -51,18 +48,50 @@ Plug 'stephpy/vim-yaml'
 Plug 'rust-lang/rust.vim'
 Plug 'dag/vim-fish'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-
 "File Navigaiton
 Plug 'preservim/nerdtree'
+Plug 'sheerun/vim-polyglot'
 
-
-Plug 'ryanoasis/vim-devicons'
-
+Plug 'pangloss/vim-javascript'    " JavaScript support
+Plug 'leafgarland/typescript-vim' " TypeScript syntax
+Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+Plug 'jparise/vim-graphql'        " GraphQL syntax
 call plug#end()
 
 
+
+" CoC extensions
+let g:coc_global_extensions = ['coc-tsserver',"coc-rust-analyzer","coc-deno"]
+
+
 colorscheme gruvbox
+
+
+
+
+
+
+
+
+
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+
+
+
+
+
+
+
+
+
+
+
+
 let mapleader=" "
 let g:LanguageClient_serverCommands ={ 'rust': ['~/.cargo/bin/rustup','run','stable','rls'],}
 let g:deoplete#enable_at_startup = 1
@@ -127,3 +156,5 @@ nnoremap <C-f> :NERDTreeFind<CR>
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
+
+nnoremap <silent> K :call <SID>show_documentation()<CR>
