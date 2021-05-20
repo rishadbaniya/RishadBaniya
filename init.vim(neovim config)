@@ -14,7 +14,7 @@ set hidden
 set mouse=a
 set noswapfile
 set nobackup
-filetype plugin indent on
+"filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -24,6 +24,7 @@ set so=8
 set signcolumn=yes
 set cmdheight=2
 set background=dark
+set encoding=UTF-8
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'junegunn/fzf'
@@ -38,6 +39,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'justinmk/vim-sneak'
 
 " GUI enhancements
+Plug 'swalladge/antarctic-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'andymass/vim-matchup'
@@ -56,25 +58,18 @@ Plug 'pangloss/vim-javascript'    " JavaScript support
 Plug 'leafgarland/typescript-vim' " TypeScript syntax
 Plug 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
 Plug 'jparise/vim-graphql'        " GraphQL syntax
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
+Plug 'Soares/base16.nvim'
+
+
 call plug#end()
-
-
 
 " CoC extensions
 let g:coc_global_extensions = ['coc-tsserver',"coc-rust-analyzer","coc-deno"]
 
-
+"let g:lightline = { 'colorscheme': 'onehalfdark' }
+"
 colorscheme gruvbox
-
-
-
-
-
-
-
-
-
-
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
@@ -146,8 +141,6 @@ let g:rustfmt_emit_files = 1
 let g:rustfmt_fail_silently = 0
 let g:rust_clip_command = 'xclip -selection clipboard'
 
-
-
 " Remap for NERDTree File Navigation
 
 nnoremap <M-1> :NERDTreeToggle<CR>
@@ -157,4 +150,15 @@ nnoremap <C-f> :NERDTreeFind<CR>
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
 
+
+
+
+" Press SHIT + k to show documenation, i.e show infereed type on a variable
 nnoremap <silent> K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+  call CocAction('doHover')
+  endif
+endfunction
