@@ -13,7 +13,7 @@ Press prefix + I (capital i, as in Install) to fetch the plugin.
 
 ----------------------------------------------------------------------
 # remap prefix from 'C-b' to '(alt)M-a'
-unbind C-b 
+unbind C-b
 set-option -g prefix M-a
 
 #vim-like pane switching
@@ -25,10 +25,13 @@ bind -r l select-pane -R
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'mattdavis90/base16-tmux'
 #Tmux Battery level showing plugin
-set -g @plugin 'tmux-plugins/tmux-battery'
 
+#TMUX mouse
+set -g mouse on
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+
 run '~/.tmux/plugins/tpm/tpm'
 
 
