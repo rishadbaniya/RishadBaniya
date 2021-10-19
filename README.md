@@ -1,11 +1,7 @@
-# I'm Rishad Baniya. I write codes!
+## I'm Rishad Baniya. I write codes!
 
-A Backend Developer, wannabe Systems Engineer and a Rustacean by heart and brain.
+A Backend Engineer, Wannabe Systems Engineer, Rustacean
 
-Not availaible on any Social Media.
+Rust + Javascript 
 
-Javascript + Rust + Kotlin
-
-
-
-
+**Note :** I'm bad at UI/UX
