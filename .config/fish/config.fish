@@ -1,13 +1,3 @@
-
-
-vim="nvim"
-
-set                                                                 \|__|                                                               
-                                                                                                                                                          
-
-
-
-
 alias cr="cargo run"
 alias vim="nvim"
 
