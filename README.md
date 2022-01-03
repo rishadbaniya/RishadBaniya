@@ -2,6 +2,6 @@
 
 A Backend Engineer, Wannabe Systems Engineer, Rustacean
 
-Rust + Javascript 
+Assembly(x86_64) + Rust + Javascript 
 
 **Note :** I'm bad at UI/UX
