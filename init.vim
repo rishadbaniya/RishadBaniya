@@ -61,6 +61,7 @@ Plug 'jparise/vim-graphql'        " GraphQL syntax
 Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'Soares/base16.nvim'
 
+Plug 'dstein64/nvim-scrollview', { 'branch': 'main' }
 
 call plug#end()
 
