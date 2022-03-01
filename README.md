@@ -1,7 +1,12 @@
-## I'm Rishad Baniya. I write codes!
+## I'm Rishad Baniya
 
-A Backend Engineer, Linux Systems Engineer, Growing Blockchain Developer. 20yo
+I do magics related to Backend, Systems. 20yo.
 
-Assembly(x86_64) + Rust + Javascript 
+Rust + JS 
 
-**Note :** I'm bad at UI/UX
+Currently :
+
+- Learning Assembly(ARM)
+- Trying to be mature with Blockchain
+
+**Note :** I love the smell of toner on my face
