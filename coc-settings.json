@@ -1,5 +1,7 @@
 //NOTE : This file should be in ~/.config/nvim/
 // For ccls( C language server) to work, run "sudo apt install ccls"
+// Don't open *.c files in the HOME directory as well, a strange error would occur -
+//https://github.com/neoclide/coc.nvim/issues/247
 
 {
 //     "rust-analyzer.updates.prompt": false,
