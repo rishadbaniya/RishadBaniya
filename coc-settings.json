@@ -1,6 +1,31 @@
-NOTE : This file should be in ~/.config/nvim/
+//NOTE : This file should be in ~/.config/nvim/
+// For ccls( C language server) to work, run "sudo apt install ccls"
 
-
-{                                                                                                                                      │
-"suggest.noselect": false                                                                                                              │
-} 
+{
+//     "rust-analyzer.updates.prompt": false,
+//     "rust-analyzer.cargo.target": "thumbv7em-none-eabihf",
+//     "rust-analyzer.checkOnSave.allTargets": false
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp"
+            ],
+            "rootPatterns": [
+                ".ccls",
+                "compile_commands.json",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        }
+    }
+}
