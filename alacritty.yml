@@ -4,6 +4,8 @@
 # To use the "FiraCode NF" font, downlaod by searching on google "fira code nerd font" and select 
 # "regular" style font
 
+# https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode/Regular/complete
+
 # Colors (Gruvbox Material Dark Medium)
 colors:
   primary:
