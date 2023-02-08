@@ -1,8 +1,8 @@
 ## I'm Rishad Baniya
 
-I do magics related to Backend, Systems. 20yo.
+I do magics related to Backend | Systems | Mobile Application. 20yo.
 
-Rust + JS 
+Rust + JS + Dart
 
 Currently :
 
