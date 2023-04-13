@@ -6,6 +6,6 @@ Rust + JS + Dart
 
 Currently :
 
-- Trying to be mature with Blockchain
+- Trying to make my way to the world of Machine Learning
 
-**Note :** I love the smell of toner on my face
+**Note : Let's keep it simple, nothing fancy** 
