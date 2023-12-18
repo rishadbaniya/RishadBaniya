@@ -10,6 +10,6 @@ Currently :
 - Spending my time on [The Tor Project](https://gitlab.torproject.org/rishadbaniya)
 
 
-Blogs at : https://rishadbaniya.github.io/blog
+Blogs at : https://rishadbaniya.github.io/blog/post
 
 **Note : Let's keep it simple, nothing fancy** 
