@@ -2,14 +2,6 @@
 
 I do magics related to Backend | Systems | Mobile Application. 22yo.
 
-Rust + OCaml + Flutter + Random Stuff
-
-Currently :
-
-- Learning OCaml
-- Spending my time on [The Tor Project](https://gitlab.torproject.org/rishadbaniya)
-
-
-Blogs at : https://rishadbaniya.github.io/blog/post
+Rust + Julia + TS + random stuff i love
 
 **Note : Let's keep it simple, nothing fancy** 
