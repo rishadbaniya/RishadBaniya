@@ -1,6 +1,6 @@
 ## I'm Rishad Baniya
 
-I do magics related to Backend | Systems | Mobile Application. 22yo.
+I do magics related to Backend | Systems | Mobile Application
 
 Rust + Julia + TS + random stuff i love
 
