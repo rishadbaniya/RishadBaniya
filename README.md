@@ -1,6 +1,6 @@
 ## I'm Rishad Baniya
 
-I do magics related to Backend | Systems | Mobile Application
+I do magics related to Systems & Backend mostly
 
 Rust + Julia + TS + random stuff i love
 
